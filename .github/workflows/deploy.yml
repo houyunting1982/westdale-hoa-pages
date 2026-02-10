@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Validate announcements.json
+        run: npm run validate:announcements
+
       - name: Build site
         run: npm run build
 
