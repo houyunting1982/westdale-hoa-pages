@@ -1,5 +1,5 @@
 import data from "../data/announcements.json";
-import AnnouncementCard from "../components/AnnouncementCard";
+import AnnouncementCard from "../components/AnnouncementCard.jsx";
 
 export default function Announcements() {
   return (
