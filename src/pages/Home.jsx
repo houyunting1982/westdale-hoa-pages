@@ -7,7 +7,7 @@ export default function Home() {
               <img
                   src={`${import.meta.env.BASE_URL}wd-logo.png`}
                   alt="Westdale Townhomes"
-                  style={{ height: 44, width: "auto", display: "block" }}
+                  style={{ height: 84, width: "auto", display: "block" }}
               />
               <h1 style={{ margin: 0 }}>HOA Announcements</h1>
           </header>
