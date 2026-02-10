@@ -1,0 +1,21 @@
+# Build output
+dist/
+
+# Dependencies
+node_modules/
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Static assets
+public/docs/**/*.pdf
+
+# Data files (do not auto-format)
+src/data/announcements.json
+src/data/*.schema.json
+
+# Markdown archives (optional)
+public/docs/**/*.md
+*.md
