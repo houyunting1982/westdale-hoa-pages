@@ -1,12 +1,13 @@
 import data from "../data/announcements.json";
 import AnnouncementCard from "../components/AnnouncementCard.jsx";
+import { Stack } from "@mui/material";
 
 export default function Announcements() {
   return (
-    <div style={{ marginTop: 24 }}>
-      {data.map(item => (
+    <Stack spacing={2} sx={{ mt: 2 }}>
+      {data.map((item) => (
         <AnnouncementCard key={item.id} item={item} />
       ))}
-    </div>
+    </Stack>
   );
 }

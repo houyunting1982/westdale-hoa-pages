@@ -1,17 +1,18 @@
 import Announcements from "./Announcements";
+import { Box, Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <>
-          <header style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-              <img
-                  src={`${import.meta.env.BASE_URL}wd-logo.png`}
-                  alt="Westdale Townhomes"
-                  style={{ height: 84, width: "auto", display: "block" }}
-              />
-              <h1 style={{ margin: 0 }}>HOA Announcements</h1>
-          </header>
+    <Box>
+      <Box sx={{ mb: 2 }}>
+        <Typography variant="h4" sx={{ fontWeight: 800, mb: 0.5 }}>
+          Announcements
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Latest HOA updates and notices.
+        </Typography>
+      </Box>
       <Announcements />
-    </>
+    </Box>
   );
 }
